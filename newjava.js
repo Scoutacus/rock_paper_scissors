@@ -16,12 +16,11 @@ const scissors = function(){
     singleRound("scissors", computerSelection= computerPlay());
 }
 
+
 //function that runs a single round of RPS
 function singleRound(playerSelection, computerSelection){
     let playerWin
-    let playerScore = 0;
     let computerWin
-    let computerScore = 0;
 
 
     //RPS logic
@@ -38,13 +37,5 @@ function singleRound(playerSelection, computerSelection){
         console.log("Computer chose : " + computerSelection);
         console.log("Draw!")
     } else(console.log("Computer chose : " + computerSelection), console.log(computerWin = "Oh sorry! You lose!"))
-
-    //increments score and returns the value
-    if(playerWin === true){
-        playerScore++
-        return console.log(playerScore)
-    }else if(computerWin === true){
-        computerScore++
-        return console.log(computerScore)
-    }
+    
 }

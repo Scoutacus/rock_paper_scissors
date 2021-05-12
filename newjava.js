@@ -6,16 +6,15 @@ function computerPlay(){
 }
 
 //functions that call singleRound() on button click
-const rock = function(){
-    singleRound("rock", computerSelection= computerPlay());
-}
-const paper = function(){
-    singleRound("paper", computerSelection= computerPlay());
-}
-const scissors = function(){
-    singleRound("scissors", computerSelection= computerPlay());
-}
-
+// const rock = function(){
+//     singleRound("rock", computerSelection= computerPlay());
+// }
+// const paper = function(){
+//     singleRound("paper", computerSelection= computerPlay());
+// }
+// const scissors = function(){
+//     singleRound("scissors", computerSelection= computerPlay());
+// }
 
 //function that runs a single round of RPS
 function singleRound(playerSelection, computerSelection){
@@ -38,4 +37,14 @@ function singleRound(playerSelection, computerSelection){
         console.log("Draw!")
     } else(console.log("Computer chose : " + computerSelection), console.log(computerWin = "Oh sorry! You lose!"))
     
+}
+
+document.getElementById('rock').onclick = function(){
+    singleRound("rock", computerPlay());
+}
+document.getElementById('paper').onclick = function(){
+    singleRound("paper", computerPlay());
+}
+document.getElementById('scissors').onclick = function(){
+    singleRound("scissors", computerPlay());
 }
